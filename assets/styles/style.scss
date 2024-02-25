@@ -1,0 +1,214 @@
+$font:"Montserrat",sans-serif;
+$primary-text-color:#23a6f0;
+$second-text-color:#737373;
+$primary-color:$primary-text-color;
+$muted-color:#bdbdbd;
+$danger-color:#e74040;
+$light-background-color:#fff;
+$text-color:#252b42;
+$dark-background-color:$text-color;
+$light-gray-1: #fafafa;
+$light-text-color:$light-background-color;
+$alert-color:#e77c40;
+$secondary:#f3cd03;
+$secondary-color-1:#40bb15;
+
+$light-drop-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$accentued-drop-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+
+h1{
+    font-size: 58px;
+}
+h2{
+font-size: 40px;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 20px;
+}
+h5{
+    font-size: 16px;
+}
+h6{
+    font-size: 14px;
+}
+a{
+    font-size:14px ;
+}
+small{
+    font-size: 12px;
+}
+.btn-text{
+    font-size: 14px
+}
+p{
+font-size: 14px ;
+}
+
+*{
+  font-family:$font ;  
+}
+
+body{
+    background-color: $dark-background-color;
+}
+
+%flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+%valign-center {
+    display: flex;
+    align-items: center;
+}
+
+%link{
+    color: $light-text-color;
+    font-weight: 700;
+}
+
+header{
+  @extend %flex-center ;
+  justify-content: space-between;
+  padding: 30px 195px;
+
+  .menu-content-wrapper{
+       @extend %valign-center ;
+       gap: 83px;
+       
+       .menu-wrapper{
+        list-style-type: none;
+        display: flex;
+        gap: 21px;
+
+      .menu-item-wrapper a{
+        @extend %link;
+
+        }
+       }
+    }
+.button-wrapper{
+    display: flex;
+    gap: 45px;
+
+    .btn-link{
+        @extend %link;
+        padding: 10px;
+    }
+    .btn-primary{
+        background-color: $primary-color;
+        color: $light-text-color;
+        padding: 15px 25px;
+        display: flex;
+        gap: 15px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 700;
+
+    }
+}
+}
+
+.hero-content{
+    background-image: url(../img/Vector\ \(2\).png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    .content{
+        margin: 100px;
+          justify-content: space-between;
+            display: flex;
+            .title{
+                color: $light-text-color;
+
+                .buttons{
+                     display: flex;
+                     gap: 15px;
+                    .btn{
+                        background-color: $primary-color;
+                        color: $light-text-color;
+                        padding: 15px 25px;
+                        display: flex;
+                        gap: 15px;
+                        border-radius: 5px;
+                        text-transform: uppercase;
+                        font-weight: 700; 
+                    }
+
+                    .btn-wrapper{
+                       background-color: rgba(255, 251, 251, 0);
+                        border-color: $primary-color;
+                        color: $primary-color;
+                        padding: 15px 25px;
+                       display: flex;
+                      gap: 15px;
+                     border-radius: 5px;
+                     text-transform: uppercase;
+                    font-weight: 700;
+                    }
+                }
+            }
+    }
+}
+
+.contents{
+    display: flex;
+    justify-content: space-around;
+     gap: 20px;
+
+     
+     .title{
+        
+        background-color: $light-background-color;
+        padding: 20px 20px;
+        height:292px ;
+        width: 328px;
+    }
+}
+
+.hero-wrapper{
+    display: flex;
+    padding: 160px;
+    justify-content: space-between;
+    .title{
+        color: $light-text-color;
+    }
+
+}
+
+// FINISH//
+.finish{
+    background-color: rgb(48, 48, 67); 
+    color: rgb(231, 231, 231);
+ padding:  3px 200px;
+ max-height:300px ;
+    display: flex;
+    gap: 100px;
+
+    
+ul{
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+}
+
+input{
+    background-color: rgb(80, 74, 74);
+border-radius: 10px;
+    }
+ }
+ 
