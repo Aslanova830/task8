@@ -133,7 +133,7 @@ header{
             display: flex;
             .title{
                 color: $light-text-color;
-
+                line-height: 100%;
                 .buttons{
                      display: flex;
                      gap: 15px;
